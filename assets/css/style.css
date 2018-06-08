@@ -1,0 +1,16 @@
+body{
+    background:#4d79ff;
+    color:white;
+}
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+.img{
+    height: 200px;
+    width: 200px;
+}
