@@ -30,7 +30,7 @@ for(var i=1;i < 5;i++){
 }
 
 // craeting funtion that called once user win
-function wins(){
+function win(){
     // win increamenter
     wins++;
     // showing win on page
@@ -55,7 +55,8 @@ function lost(){
     losses++;
     // showing losses on page
     $("#losses").html(losses);
-    // once the user wins again computer choose new number from 19-120    computerGuess=Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    // once the user wins again computer choose new number from 19-120    
+    computerGuess=Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     $("#computer-Guess").html(computerGuess);
     // again generating a diffrent calues on each images once the user win
     newvaule();
@@ -77,9 +78,11 @@ $(".img").on("click" , function () {
     $("#counter").html(counter);
     
     // checking if user total and computer Guess is equal then win 
-    if(counter === computerGuess){
-        // calling win function if user won!
-            wins();      
+    if(counter === computerGuess)
+    {   
+        // alert("win");
+        // calling win funtion once user wins
+        win();
     }
     // checking if user total is more than computer Guess then user lost
     else if (counter >= computerGuess) {
