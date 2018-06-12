@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <!-- Viewport link -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/reset.css" >
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <title>Document</title>
+    <!-- Bootstra CDN link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Reset css link -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- style css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>Crystal Collector</title>
 </head>
+
 <body>
+    <!-- container -->
     <div class="container">
+        <!-- row -->
         <div class="row">
             <div class="col-lg-12">
+                <!-- page header that display text crystal collector -->
                 <div class="page-header text-center">
-                    <h1>Crystal Collector</h1>
-                  </div>
+                    <h1 class="heading">
+                        <u>Crystal Collector</u>
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
-    <br><br><br>
+    <br>
+    <br>
+    <br>
+    <!-- container -->
     <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+        <!-- Row -->
+        <div class="row">
+            <div class="col-lg-4">
 
+            </div>
+            <div class="col-lg-4">
+                <!-- division that display a target number that chosen by computer -->
+                <div class="text-center">
+                    <h1>Random Number :
+                        <span id="computer-Guess"></span>
+                    </h1>
                 </div>
-                <div class="col-lg-4">
-                    <div  class="text-center">
-                      <h3>Random Number : <span id="computer-Guess" ></span></h3>  
-                      </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- score display  -->
+                <div id="score" class="text-center">
+                    <h1>Win :
+                        <span id="win"></span>
+                    </h1>
+                    <h1>Losses :
+                        <span id="losses"></span>
+                    </h1>
                 </div>
-                
-                <div class="col-lg-4">
-                        <div id="score" class="text-center">
-                        <h3>Win :<span id="win"></span></h3>
-                        <h3>Losses :<span id="losses"></span></h3>   
-                        </div>
-                    </div>
             </div>
         </div>
-        <br><br><br>
-        <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div id="crystals" class="text-center">
-                                <img id="img1" class="img" src="assets/images/crystal1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystals" class="text-center">
-                                <img id="img2" class="img" src="assets/images/crystal2.jpg">      
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystals" class="text-center">
-                                <img id="img3" class="img" src="assets/images/crystal3.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div id="crystals" class="text-center">
-                                <img id="img4" class="img" src="assets/images/crystal4.jpg">
-                        </div>
-                    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- division that dispalys all images for crystals -->
+                <div id="crystals" class="text-center">
+                    <!-- image1 -->
+                    <img id="img1" class="img" src="assets/images/1.png">
                 </div>
             </div>
-            <br><br><br>
-            <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                               <h3>Your Total Score is :</h3>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-3">
+
+                <div id="crystals" class="text-center">
+                    <!-- image2 -->
+                    <img id="img2" class="img" src="assets/images/2.png">
                 </div>
-            <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                               <h3><span id="counter"></span></h3>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="crystals" class="text-center">
+                    <!-- image3 -->
+                    <img id="img3" class="img" src="assets/images/3.png">
                 </div>
-            
-    
-    
+            </div>
+            <div class="col-lg-3">
+                <div id="crystals" class="text-center">
+                    <!-- image4 -->
+                    <img id="img4" class="img" src="assets/images/4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- this shows a answer total of user -->
+                <div class="text-center">
+                    <h1>Your Total Score is :</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <!-- shows a total score of user -->
+                    <h1>
+                        <span id="counter"></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>    
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

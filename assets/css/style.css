@@ -1,16 +1,26 @@
+/* seting style to whole body */
 body{
     background:#4d79ff;
     color:white;
+    border: 10px solid black;
+    border-bottom: 50px solid black;
+    border-top: 15px solid black;
+    margin-top: 1px;
 }
+/* setting all h1 tags a same style */
 h1{
-    font-size: 32px;
+    font-size: 40px;
+    /* to make font bold */
     font-weight: bold;
 }
-h3{
-    font-size: 22px;
-    font-weight: bold;
-}
+/* setting all images style */
 .img{
     height: 200px;
     width: 200px;
+}
+/* setting font-style and size to page heading */
+.heading{
+    font-size: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
